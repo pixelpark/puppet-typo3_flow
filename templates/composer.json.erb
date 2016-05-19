@@ -1,0 +1,25 @@
+{
+    "name": "typo3/flow-base-distribution",
+    "description": "TYPO3 Flow Base Distribution",
+    "license": "LGPL-3.0+",
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin"
+    },
+    "require": {
+<%- if ! @extensions.nil? and ! @extensions.empty? -%>
+<%-   [@extensions].flatten.each do |extension_line| -%>
+<%-     extension_line.map do |extension, extension_version| -%>
+        "<%= extension %>": "<%= extension_version -%>",
+<%-     end -%>
+<%-   end -%>
+<%- end -%>
+        "typo3/flow": "<%= @version -%>"
+    },
+    "scripts": {
+        "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+    }
+}

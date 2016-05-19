@@ -1,0 +1,20 @@
+{
+  "author": "pixelpark",
+  "dependencies": [{
+      "name": "willdurand/composer",
+      "version_requirement": ">=1.2.1"
+    },{
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.9.0"
+    }
+  ],
+  "license": "GPL-3.0",
+  "name": "pixelpark-typo3_flow",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [],
+  "source": "https://git.pixelpark.com/puppet/typo3_flow.git",
+  "summary": "Managed Typo3-Flow",
+  "tags": [],
+  "version": "0.1.0"
+}
