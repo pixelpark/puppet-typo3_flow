@@ -10,11 +10,38 @@
   ],
   "license": "GPL-3.0",
   "name": "pixelpark-typo3_flow",
-  "operatingsystem_support": [],
-  "project_page": "",
-  "requirements": [],
-  "source": "https://git.pixelpark.com/puppet/typo3_flow.git",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "source": "git@github.com:pixelpark/puppet-typo3_flow.git",
+  "project_page": "https://github.com/pixelpark/puppet-typo3_flow",
   "summary": "Managed Typo3-Flow",
-  "tags": [],
+  "tags": ["typo3","flow","composer"],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ],
   "version": "0.1.0"
 }
